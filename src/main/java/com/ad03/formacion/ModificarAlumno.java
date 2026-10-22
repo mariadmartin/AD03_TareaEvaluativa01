@@ -13,7 +13,7 @@ public class ModificarAlumno {
 		// ### 2.- Ejercicio ###
 
 		// pedir por consola e DNI
-		System.out.print("Introduce el DNI del alumno");
+		System.out.println("Introduce el DNI del alumno");
 		Scanner sc = new Scanner(System.in);
 		String dni = sc.nextLine();
 
@@ -34,7 +34,7 @@ public class ModificarAlumno {
 				String nombreAlumno = rs.getString("nombre");
 				System.out.println(nombreAlumno);
 
-				System.out.print("Nuevo nombre (deja en blanco para no modificar");
+				System.out.print("Nuevo nombre (deja en blanco para no modificar\n");
 				String nuevoNombre = sc.nextLine();
 
 				if (!nuevoNombre.isEmpty()) {
